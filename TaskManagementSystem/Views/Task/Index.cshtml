@@ -1,0 +1,26 @@
+@model IEnumerable<TaskManagementSystem.Models.TaskPlanned>
+@{
+    ViewData["Title"] = "Tasks";
+}
+<h2>@ViewData["Title"]</h2>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Deadline</th>
+        <th>Priority</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var taskPlanned in Model)
+    {
+        <tr>
+            <td>@taskPlanned.Title</td>
+            <td>@taskPlanned.Description</td>
+            <td>@taskPlanned.Deadline</td>
+            <td>@taskPlanned.Priority</td>
+        </tr>
+    }
+    </tbody>
+</table>
