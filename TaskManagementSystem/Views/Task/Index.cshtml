@@ -3,7 +3,7 @@
     ViewData["Title"] = "Tasks";
 }
 <h2>@ViewData["Title"]</h2>
-<button asp-action="Create" class="btn-primary">Create New Task</button>
+<a asp-action="Create" class="btn-primary">Create New Task</a>
 <table class="table">
     <thead>
     <tr>
@@ -21,6 +21,7 @@
             <td>@taskPlanned.Description</td>
             <td>@taskPlanned.Deadline</td>
             <td>@taskPlanned.Priority</td>
+            <td> <a asp-action="Edit" asp-route-id="@taskPlanned.Id" class="btn btn-primary">Edit</a></td>
         </tr>
     }
     </tbody>

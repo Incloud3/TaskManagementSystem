@@ -6,6 +6,7 @@ using TaskManagementSystem.Data;
 using TaskManagementSystem.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Build.Framework;
 
 namespace TaskManagementSystem.Controllers;
 
@@ -37,6 +38,7 @@ public class TaskController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(TaskPlanned model)
     {
         if (ModelState.IsValid)
@@ -54,5 +56,55 @@ public class TaskController : Controller
         }
 
         return View(model);
+    }
+
+    public async Task<IActionResult> Edit(int id)
+    {
+        var task = await _context.TasksPlanned.FindAsync(id);
+        if (task == null)
+        {
+            return NotFound();
+        }
+        return View(task);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(int id,
+        [Bind("Id, Title, Description, Deadline, Priority")] TaskPlanned taskPlanned)
+    {
+        if (id != taskPlanned.Id)
+        {
+            return NotFound();
+        }
+
+        if (ModelState.IsValid)
+        {
+            try
+            {
+                _context.Update(taskPlanned);
+                await _context.SaveChangesAsync();
+            }
+            catch
+            {
+                if (!TaskExists(taskPlanned.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        return View(taskPlanned);
+    }
+
+    private bool TaskExists(int id)
+    {
+        return _context.TasksPlanned.Any(e => e.Id == id);
     }
 }
