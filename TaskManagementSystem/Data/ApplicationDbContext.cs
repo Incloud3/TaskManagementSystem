@@ -11,4 +11,9 @@ public class ApplicationDbContext : IdentityDbContext
     {
     }
     public DbSet<TaskPlanned> TasksPlanned { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+    }
 }

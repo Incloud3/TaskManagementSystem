@@ -41,7 +41,13 @@ public class TaskController : Controller
     {
         if (ModelState.IsValid)
         {
-            model.UserId = _userManager.GetUserId(User);
+            var userId = _userManager.GetUserId(User);
+            if (userId == null)
+            {
+                return View("Error");
+            }
+
+            model.UserId = userId;
             _context.TasksPlanned.Add(model);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
