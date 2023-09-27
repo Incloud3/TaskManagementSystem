@@ -1,4 +1,6 @@
 @model TaskManagementSystem.Models.TaskPlanned
+@Html.HiddenFor(model => model.UserId, null)
+@Html.HiddenFor(model => model.User, null)
 @{
     ViewData["Title"] = "Create Task";
 }

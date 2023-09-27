@@ -10,5 +10,5 @@ public class TaskPlanned
     public string Priority { get; set; }
 
     public string UserId { get; set; }
-    public IdentityUser User { get; set; }
+    public virtual IdentityUser User { get; set; }
 }
