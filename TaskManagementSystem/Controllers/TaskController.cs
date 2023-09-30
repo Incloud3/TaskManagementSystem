@@ -25,7 +25,6 @@ public class TaskController : Controller
     public async Task<IActionResult> Index()
     {
         var userId = _userManager.GetUserId(User);
-        var user = _userManager.GetUserAsync(User);
         var tasksPlanned = await _context.TasksPlanned
             .Where(t => t.UserId == userId)
             .ToListAsync();
@@ -48,7 +47,6 @@ public class TaskController : Controller
         {
             var userId = _userManager.GetUserId(User);
             if (userId == null) return View("Error");
-
             model.UserId = userId;
 
             _context.TasksPlanned.Add(model);
@@ -71,23 +69,27 @@ public class TaskController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(int id,
-        [Bind("Id, Title, Description, Deadline, Priority")]
-        TaskPlanned taskPlanned)
+    public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Description,Deadline,Priority")] TaskPlanned taskPlanned)
     {
         if (id != taskPlanned.Id)
         {
             return NotFound();
         }
-
+        
+        ModelState.Remove("User");
+        ModelState.Remove("UserId");
         if (ModelState.IsValid)
         {
+            var userId = _userManager.GetUserId(User);
+            if (userId == null) return View("Error");
+            taskPlanned.UserId = userId;
+            
             try
             {
                 _context.Update(taskPlanned);
                 await _context.SaveChangesAsync();
             }
-            catch
+            catch (DbUpdateConcurrencyException)
             {
                 if (!TaskExists(taskPlanned.Id))
                 {
@@ -98,10 +100,8 @@ public class TaskController : Controller
                     throw;
                 }
             }
-
             return RedirectToAction(nameof(Index));
         }
-
         return View(taskPlanned);
     }
     
