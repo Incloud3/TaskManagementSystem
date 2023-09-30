@@ -40,46 +40,21 @@ public class TaskController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create(TaskPlanned model)
+    public async Task<IActionResult> Create([Bind("Title,Description,Deadline,Priority")] TaskPlanned model)
     {
-        var userId = _userManager.GetUserId(User);
-        var user = await _userManager.GetUserAsync(User);
-        model.User = user;
-        model.UserId = "3ed89427-3e97-4576-98a5-16fed2c8d4f6";
-        //ModelState.Remove("User");
-        //ModelState.Remove("UserId");
+        ModelState.Remove("User");
+        ModelState.Remove("UserId");
         if (ModelState.IsValid)
         {
-            //var errors = ModelState.Select(x => x.Value.Errors)
-            
-            //var userId = _userManager.GetUserId(User);
-            if (userId == null)
-            {
-                return View("Error");
-            }
-            
+            var userId = _userManager.GetUserId(User);
+            if (userId == null) return View("Error");
+
+            model.UserId = userId;
+
             _context.TasksPlanned.Add(model);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-        
-        var errors = ModelState.Select(x => x.Value.Errors)
-            .Where(y => y.Count > 0)
-            .ToList();
-        foreach (var error in ModelState)
-        {
-            Console.WriteLine($"Key: {error.Key}, Error: {string.Join(",", error.Value.Errors.Select(e => e.ErrorMessage))}");
-        }
-        foreach (var errorList in errors)
-        {
-            foreach (var error in errorList)
-            {
-                Console.WriteLine(error.ErrorMessage);
-            }
-        }
-        Console.WriteLine(_userManager.GetUserId(User)+ ": UserId");
-        Console.WriteLine(await _userManager.GetUserAsync(User) + ": User");
-        Console.WriteLine("WHAT THE FUCK IS GOING ON");
         return View(model);
     }
 
