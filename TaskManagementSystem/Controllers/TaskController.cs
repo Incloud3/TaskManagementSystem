@@ -56,12 +56,19 @@ public class TaskController : Controller
         return View(model);
     }
 
+    [HttpGet]
     public async Task<IActionResult> Edit(int id)
     {
         var task = await _context.TasksPlanned.FindAsync(id);
         if (task == null)
         {
-            return NotFound();
+            return StatusCode(404);
+        }
+
+        var userId = _userManager.GetUserId(User);
+        if (userId == null || task.UserId != userId)
+        {
+            return StatusCode(403);
         }
 
         return View(task);
@@ -73,27 +80,38 @@ public class TaskController : Controller
     {
         if (id != taskPlanned.Id)
         {
-            return NotFound();
+            return StatusCode(404);
         }
-        
+
+        var userId = _userManager.GetUserId(User);
+        var existingTask = await _context.TasksPlanned.FindAsync(id);
+
+        if (existingTask == null)
+        {
+            return StatusCode(404);
+        }
+
+        if (userId == null || existingTask.UserId != userId)
+        {
+            return StatusCode(403);
+        }
+
         ModelState.Remove("User");
         ModelState.Remove("UserId");
         if (ModelState.IsValid)
         {
-            var userId = _userManager.GetUserId(User);
-            if (userId == null) return View("Error");
-            taskPlanned.UserId = userId;
-            
             try
             {
-                _context.Update(taskPlanned);
+                taskPlanned.UserId = existingTask.UserId;
+                taskPlanned.User = existingTask.User;
+                _context.Entry(existingTask).CurrentValues.SetValues(taskPlanned);
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
             {
                 if (!TaskExists(taskPlanned.Id))
                 {
-                    return NotFound();
+                    return StatusCode(404);
                 }
                 else
                 {
@@ -126,13 +144,13 @@ public class TaskController : Controller
     //{
     //    if (id == null)
     //    {
-    //        return NotFound();
+    //        return StatusCode(404);
     //    }
 //
     //    var task = await _context.TasksPlanned.FindAsync(id);
     //    if (task == null)
     //    {
-    //        return NotFound();
+    //        return StatusCode(404);
     //    }
 
     //    return View(task);
