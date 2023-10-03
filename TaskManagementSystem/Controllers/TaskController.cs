@@ -130,6 +130,9 @@ public class TaskController : Controller
         _context.TasksPlanned.Remove(task);
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
+        //TODO Implement task verification before deletion
+        //TODO Implement user authentication for deletion
+        //TODO Add additional info about deleted task on the delete page
     }
 
 
