@@ -124,7 +124,7 @@ public class TaskController : Controller
     }
     
     [HttpPost, ActionName("Delete")]
-    public async Task<IActionResult> DeleteConfirmed(int id)
+    public async Task<IActionResult> Delete(int id)
     {
         var task = await _context.TasksPlanned.FindAsync(id);
         _context.TasksPlanned.Remove(task);
@@ -137,22 +137,4 @@ public class TaskController : Controller
     {
         return _context.TasksPlanned.Any(e => e.Id == id);
     }
-    
-
-    //[HttpGet]
-    //public async Task<IActionResult> Delete(int? id)
-    //{
-    //    if (id == null)
-    //    {
-    //        return StatusCode(404);
-    //    }
-//
-    //    var task = await _context.TasksPlanned.FindAsync(id);
-    //    if (task == null)
-    //    {
-    //        return StatusCode(404);
-    //    }
-
-    //    return View(task);
-    //}
 }
