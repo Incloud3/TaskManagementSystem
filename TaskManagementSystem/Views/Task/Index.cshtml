@@ -27,7 +27,6 @@
             var modal = $(this);
             modal.find('.modal-body #taskTitle').text(taskTitle);
             modal.find('.modal-footer form').attr('action', '@Url.Action("Delete", "Task")/' + taskId);
-            console.log(modal.find('.modal-footer form').attr('action'));
         });
     });
 </script>

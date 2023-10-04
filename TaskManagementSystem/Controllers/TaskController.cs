@@ -126,12 +126,27 @@ public class TaskController : Controller
     [HttpPost, ActionName("Delete")]
     public async Task<IActionResult> Delete(int id)
     {
+        if (!TaskExists(id))
+        {
+            return StatusCode(404);
+        }
+        
         var task = await _context.TasksPlanned.FindAsync(id);
+
+        if (task == null)
+        {
+            return StatusCode(404);
+        }
+
+        var userId = _userManager.GetUserId(User);
+        if (task.UserId != userId)
+        {
+            return StatusCode(403);
+        }
+        
         _context.TasksPlanned.Remove(task);
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
-        //TODO Implement task verification before deletion
-        //TODO Implement user authentication for deletion
         //TODO Add additional info about deleted task on the delete page
     }
 
