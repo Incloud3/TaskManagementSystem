@@ -23,9 +23,13 @@
             var button = $(event.relatedTarget);
             var taskId = button.data('id');
             var taskTitle = button.data('title');
+            var taskDeadline = button.data('deadline');
+            var taskPriority = button.data('priority');
 
             var modal = $(this);
             modal.find('.modal-body #taskTitle').text(taskTitle);
+            modal.find('.modal-body #taskDeadline').text(taskDeadline);
+            modal.find('.modal-body #taskPriority').text(taskPriority);
             modal.find('.modal-footer form').attr('action', '@Url.Action("Delete", "Task")/' + taskId);
         });
     });
@@ -41,6 +45,7 @@
         <th>Description</th>
         <th>Deadline</th>
         <th>Priority</th>
+        <th>Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -51,8 +56,8 @@
             <td>@taskPlanned.Description</td>
             <td>@taskPlanned.Deadline</td>
             <td>@taskPlanned.Priority</td>
-            <td> <a asp-action="Edit" asp-route-id="@taskPlanned.Id" class="btn btn-warning">Edit</a></td>
-            <td> <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="@taskPlanned.Id" data-title="@taskPlanned.Title">Delete</a> </td>
+            <td> <a asp-action="Edit" asp-route-id="@taskPlanned.Id" class="btn btn-warning">Edit</a>
+            <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="@taskPlanned.Id" data-title="@taskPlanned.Title" data-deadline="@taskPlanned.Deadline.ToShortDateString()" data-priority="@taskPlanned.Priority" data->Delete</a> </td>
         </tr>
     }
     <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -66,6 +71,8 @@
                 </div>
                 <div class="modal-body">
                     <p>Are you sure you want to delete <strong id="taskTitle"></strong>?</p>
+                    <p>Deadline: <strong id="taskDeadline"></strong></p>
+                    <p>Deadline: <strong id="taskPriority"></strong></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
