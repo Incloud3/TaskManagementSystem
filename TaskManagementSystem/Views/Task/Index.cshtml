@@ -37,7 +37,7 @@
 
 </body>
 <h2 xmlns="http://www.w3.org/1999/html">@ViewData["Title"]</h2>
-<a asp-action="Create" class="btn-primary">Create New Task</a>
+<a asp-action="Create" class="btn btn-primary">Create New Task</a>
 <table class="table">
     <thead>
     <tr>
@@ -54,7 +54,7 @@
         <tr>
             <td>@taskPlanned.Title</td>
             <td>@taskPlanned.Description</td>
-            <td>@taskPlanned.Deadline</td>
+            <td>@taskPlanned.Deadline.ToShortDateString()</td>
             <td>@taskPlanned.Priority</td>
             <td> <a asp-action="Edit" asp-route-id="@taskPlanned.Id" class="btn btn-warning">Edit</a>
             <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="@taskPlanned.Id" data-title="@taskPlanned.Title" data-deadline="@taskPlanned.Deadline.ToShortDateString()" data-priority="@taskPlanned.Priority" data->Delete</a> </td>
@@ -72,7 +72,7 @@
                 <div class="modal-body">
                     <p>Are you sure you want to delete <strong id="taskTitle"></strong>?</p>
                     <p>Deadline: <strong id="taskDeadline"></strong></p>
-                    <p>Deadline: <strong id="taskPriority"></strong></p>
+                    <p>Priority: <strong id="taskPriority"></strong></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
