@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using TaskManagementSystem.Controllers;
 using TaskManagementSystem.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace TaskManagementSystem.Tests;
 
@@ -12,11 +13,18 @@ public class HomeControllerTests
 {
     private readonly Mock<ILogger<HomeController>> _loggerMock;
     private readonly HomeController _homeController;
+    private readonly Mock<HttpContext> _httpContextMock;
 
     public HomeControllerTests()
     {
         _loggerMock = new Mock<ILogger<HomeController>>();
         _homeController = new HomeController(_loggerMock.Object);
+        _httpContextMock = new Mock<HttpContext>();
+        _httpContextMock.SetupGet(hc => hc.TraceIdentifier).Returns("TestTraceIdentifier");
+        _homeController.ControllerContext = new ControllerContext
+        {
+            HttpContext = _httpContextMock.Object
+        };
     }
     
     [Fact]
