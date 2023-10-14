@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 using Moq;
 using Microsoft.Extensions.Logging;

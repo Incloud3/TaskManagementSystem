@@ -367,3 +367,4 @@
 /home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem.Tests/obj/Debug/net7.0/TaskManagementSystem.Tests.pdb
 /home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem.Tests/obj/Debug/net7.0/TaskManagementSystem.Tests.genruntimeconfig.cache
 /home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem.Tests/obj/Debug/net7.0/ref/TaskManagementSystem.Tests.dll
+/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem.Tests/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.InMemory.dll

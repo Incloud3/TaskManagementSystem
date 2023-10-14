@@ -6,11 +6,10 @@ namespace TaskManagementSystem.Data;
 
 public class ApplicationDbContext : IdentityDbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-        : base(options)
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
     }
-    public DbSet<TaskPlanned> TasksPlanned { get; set; }
+    public virtual DbSet<TaskPlanned> TasksPlanned { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
