@@ -6,7 +6,7 @@ using TaskManagementSystem.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
 
-namespace TaskManagementSystem.Tests;
+namespace TaskManagementSystem.Tests.Controllers;
 
 public class HomeControllerTests
 {

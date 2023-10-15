@@ -11,7 +11,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Security.Claims;
 
-namespace TaskManagementSystem.Tests;
+namespace TaskManagementSystem.Tests.Controllers;
 
 public class TaskControllerTests : IDisposable
 {
