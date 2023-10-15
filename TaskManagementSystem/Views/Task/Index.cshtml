@@ -54,7 +54,7 @@
         <tr>
             <td>@taskPlanned.Title</td>
             <td>@taskPlanned.Description</td>
-            <td>@taskPlanned.Deadline.ToShortDateString()</td>
+            <td>@taskPlanned.Deadline.ToString("dd/MM/yyyy")</td>
             <td>@taskPlanned.Priority</td>
             <td> <a asp-action="Edit" asp-route-id="@taskPlanned.Id" class="btn btn-warning">Edit</a>
             <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-id="@taskPlanned.Id" data-title="@taskPlanned.Title" data-deadline="@taskPlanned.Deadline.ToShortDateString()" data-priority="@taskPlanned.Priority" data->Delete</a> </td>
