@@ -15,10 +15,18 @@ public class TaskPlanned
     [NotDefaultValue]
     public DateTime Deadline { get; set; }
     [Required]
-    public string Priority { get; set; }
+    public TaskPriority Priority { get; set; }
 
     public string UserId { get; set; }
     public virtual IdentityUser User { get; set; }
+}
+
+public enum TaskPriority
+{
+    Low,
+    Medium,
+    High,
+    Critical
 }
 
 public class NotDefaultValueAttribute : ValidationAttribute
