@@ -22,10 +22,10 @@ public class TaskControllerTests : IDisposable
     public TaskControllerTests()
     {
         var options = new DbContextOptionsBuilder<ApplicationDbContext>()
-            .UseInMemoryDatabase(databaseName: $"TestDb{Guid.NewGuid()}")
-            .Options;
+            .UseInMemoryDatabase(databaseName: $"TestDb{Guid.NewGuid()}").Options;
 
         _context = new ApplicationDbContext(options);
+        _context.Database.EnsureCreated();
 
         var userStoreMock = new Mock<IUserStore<IdentityUser>>();
         _userManagerMock = new Mock<UserManager<IdentityUser>>(userStoreMock.Object, null, null, null, null, null, null, null, null);
@@ -43,7 +43,7 @@ public class TaskControllerTests : IDisposable
             new TaskPlanned { Id = 1, UserId = testUserId, Title = "Task1", Description = "Description1", Priority = TaskPriority.High },
             new TaskPlanned { Id = 2, UserId = testUserId, Title = "Task2", Description = "Description2", Priority = TaskPriority.Low },
             new TaskPlanned { Id = 3, UserId = testUserId, Title = "Task3", Description = "Description3", Priority = TaskPriority.High },
-            new TaskPlanned { Id = 4, UserId = testUserId, Title = "Task4", Description = "Description4", Priority = TaskPriority.Critical },
+            new TaskPlanned { Id = 4, UserId = testUserId, Title = "Task4", Description = "Description4", Priority = TaskPriority.Critical},
         };
 
         _context.TasksPlanned.AddRange(mockTasks);
