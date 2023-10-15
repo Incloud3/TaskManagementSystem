@@ -147,7 +147,6 @@ public class TaskController : Controller
         _context.TasksPlanned.Remove(task);
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
-        //TODO Add additional info about deleted task on the delete page
     }
 
 

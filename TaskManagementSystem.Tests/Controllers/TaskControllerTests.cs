@@ -1,16 +1,3 @@
-using Xunit;
-using Moq;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using TaskManagementSystem.Controllers;
-using TaskManagementSystem.Data;
-using TaskManagementSystem.Models;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Security.Claims;
-
 namespace TaskManagementSystem.Tests.Controllers;
 
 public class TaskControllerTests : IDisposable

@@ -1,7 +1,3 @@
-using Xunit;
-using TaskManagementSystem.Controllers;
-using Microsoft.AspNetCore.Mvc;
-
 namespace TaskManagementSystem.Tests.Controllers;
 
 public class StatusCodeControllerTests
