@@ -15011,11 +15011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem.Tests/TaskManagementSystem.Tests.csproj",
+      "projectUniqueName": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem.Tests/TaskManagementSystem.Tests.csproj",
       "projectName": "TaskManagementSystem.Tests",
-      "projectPath": "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem.Tests/TaskManagementSystem.Tests.csproj",
+      "projectPath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem.Tests/TaskManagementSystem.Tests.csproj",
       "packagesPath": "/home/incloud/.nuget/packages/",
-      "outputPath": "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem.Tests/obj/",
+      "outputPath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/incloud/.nuget/NuGet/NuGet.Config"
@@ -15030,8 +15030,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj": {
-              "projectPath": "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj"
+            "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj": {
+              "projectPath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj"
             }
           }
         }

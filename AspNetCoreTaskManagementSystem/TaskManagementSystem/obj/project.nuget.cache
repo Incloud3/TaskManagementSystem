@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u/t/cpp0+z3SIuM6GG3ttIyeZxG+gtI8ye/1u+suGE9zzC+V6KkiW+2Y0uzIqZ+XPe/WoucLaFDH/4qTotnSQg==",
+  "dgSpecHash": "AnPqlyHKzFlWQWVrKDuSKpfhxxXLluZ6ZvIkfPhe15ET8Vx2vsqjmrfT+jrvRnW3a5+6w04OI7y0syXVRjXnbA==",
   "success": true,
-  "projectFilePath": "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
+  "projectFilePath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
   "expectedPackageFiles": [
     "/home/incloud/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/home/incloud/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

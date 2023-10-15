@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj": {}
+    "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj": {}
   },
   "projects": {
-    "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj": {
+    "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
+        "projectUniqueName": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
         "projectName": "TaskManagementSystem",
-        "projectPath": "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
+        "projectPath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
         "packagesPath": "/home/incloud/.nuget/packages/",
-        "outputPath": "/home/incloud/RiderProjects/TaskManagementSystem/TaskManagementSystem/obj/",
+        "outputPath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/incloud/.nuget/NuGet/NuGet.Config"
