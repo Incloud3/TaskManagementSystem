@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Profile: {{ request.user.username }}</h2>
+
+<!-- Display User's Current Email -->
+<p>Current Email: {{ request.user.email }}</p>
+
+<!-- Update Email Section -->
+<h3>Update Email</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ email_form.as_p }}
+    <input type="submit" name="update_email" value="Update Email">
+</form>
+
+<!-- Change Password Section -->
+<h3>Change Password</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ password_form.as_p }}
+    <input type="submit" name="change_password" value="Change Password">
+</form>
+
+<!-- Delete Account Section -->
+<h3>Delete Account</h3>
+<p>Warning: This will permanently delete your account!</p>
+<form method="post">
+    {% csrf_token %}
+    {{ delete_form.as_p }}
+    <input type="submit" name="delete_account" value="Delete Account">
+</form>
+
+{% endblock %}
