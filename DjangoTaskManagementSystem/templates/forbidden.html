@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ error_message|default:"You don't have permission to access this resource." }}</h1>
+<p>If you think this is a mistake, please contact the administrator.</p>
+<a href="{% url 'home' %}" class="btn btn-primary">Return to Home</a>
+{% endblock %}

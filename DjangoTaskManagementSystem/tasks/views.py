@@ -31,7 +31,7 @@ def register_view(request):
             user = form.save()
             login(request, user)
             messages.success(request, "Registration successful!")
-            return redirect('home')  # Redirect to a homepage or other suitable page
+            return redirect('home')
         else:
             messages.error(request, "Unsuccessful registration. Invalid information.")
     else:
@@ -58,7 +58,7 @@ def profile_view(request):
             password_form = PasswordChangeForm(user, request.POST)
             if password_form.is_valid():
                 user = password_form.save()
-                update_session_auth_hash(request, user)  # Update the session hash to keep the user logged in
+                update_session_auth_hash(request, user)
                 messages.success(request, "Password changed successfully!")
 
         elif 'delete_account' in request.POST:
@@ -66,7 +66,7 @@ def profile_view(request):
             if delete_form.is_valid() and delete_form.cleaned_data['confirm_delete']:
                 user.delete()
                 messages.success(request, "Account deleted.")
-                return redirect('/')  # Redirect to homepage or login page
+                return redirect('/')
 
     context = {
         'password_form': password_form,
@@ -92,6 +92,11 @@ def create_task(request):
 
 def delete_task(request, task_id):
     task = get_object_or_404(TaskPlanned, id=task_id)
+
+    if task.user != request.user:
+        messages.error(request, "You do not have permission to access this task.")
+        return redirect('forbidden')
+
     if request.method == "POST":
         task.delete()
         return redirect('task_list')
@@ -99,6 +104,11 @@ def delete_task(request, task_id):
 
 def edit_task(request, task_id):
     task = get_object_or_404(TaskPlanned, id=task_id)
+
+    if task.user != request.user:
+        messages.error(request, "You do not have permission to access this task.")
+        return redirect('forbidden')
+
     if request.method == "POST":
 
         form = TaskForm(request.POST, instance=task)
@@ -108,3 +118,9 @@ def edit_task(request, task_id):
     else:
         form = TaskForm(instance=task)
     return render(request, 'edit_task.html', {'form': form, 'task': task})
+
+def forbidden_view(request):
+    context = {
+        'error_message': "You don't have permission to access this resource."
+    }
+    return render(request, 'forbidden.html', context)

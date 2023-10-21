@@ -1,34 +1,49 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block content %}
 <h2>Profile: {{ request.user.username }}</h2>
 
-<!-- Display User's Current Email -->
-<p>Current Email: {{ request.user.email }}</p>
+<div class="mb-3">
+    <strong>Current Email:</strong> {{ request.user.email }}
+</div>
 
-<!-- Update Email Section -->
 <h3>Update Email</h3>
 <form method="post">
     {% csrf_token %}
-    {{ email_form.as_p }}
-    <input type="submit" name="update_email" value="Update Email">
+    <div class="form-group">
+        {{ email_form.email.label_tag }}
+        {{ email_form.email }}
+    </div>
+    <button type="submit" class="btn btn-primary" name="update_email">Update Email</button>
 </form>
 
-<!-- Change Password Section -->
-<h3>Change Password</h3>
+<h3 class="mt-4">Change Password</h3>
 <form method="post">
     {% csrf_token %}
-    {{ password_form.as_p }}
-    <input type="submit" name="change_password" value="Change Password">
+    <div class="form-group">
+        {{ password_form.old_password.label_tag }}
+        {{ password_form.old_password }}
+    </div>
+    <div class="form-group">
+        {{ password_form.new_password1.label_tag }}
+        {{ password_form.new_password1 }}
+    </div>
+    <div class="form-group">
+        {{ password_form.new_password2.label_tag }}
+        {{ password_form.new_password2 }}
+    </div>
+    <button type="submit" class="btn btn-primary" name="change_password">Change Password</button>
 </form>
 
-<!-- Delete Account Section -->
-<h3>Delete Account</h3>
-<p>Warning: This will permanently delete your account!</p>
+<h3 class="mt-4">Delete Account</h3>
+<p class="text-danger">Warning: This will permanently delete your account!</p>
 <form method="post">
     {% csrf_token %}
-    {{ delete_form.as_p }}
-    <input type="submit" name="delete_account" value="Delete Account">
+    <div class="form-check mb-2">
+        <input type="checkbox" class="form-check-input" id="confirmDelete" name="confirm_delete" required>
+        <label class="form-check-label" for="confirmDelete">I understand and wish to delete my account.</label>
+    </div>
+    <button type="submit" class="btn btn-danger" name="delete_account">Delete Account</button>
 </form>
 
 {% endblock %}

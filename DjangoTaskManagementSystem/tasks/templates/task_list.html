@@ -21,11 +21,11 @@
                 <tr>
                     <td>{{ task.title }}</td>
                     <td>{{ task.description }}</td>
-                    <td>{{ task.deadline }}</td>
+                    <td>{{ task.deadline|date:"d/m/Y" }}</td>
                     <td>{{ task.get_priority_display }}</td>
                     <td>
                         <a href="{% url 'edit_task' task.id %}" class="btn btn-warning">Edit</a>
-                        <a href="#" data-toggle="modal" data-target="#deleteModal" data-id="{{ task.id }}" data-title="{{ task.title }}" data-deadline="{{ task.deadline }}" data-priority="{% if task.priority == 1 %}low{% elif task.priority == 2 %}medium{% elif task.priority == 3 %}high{% elif task.priority == 4 %}critical{% endif %}" class="btn btn-danger">Delete</a>
+                        <a href="#" data-toggle="modal" data-target="#deleteModal" data-id="{{ task.id }}" data-title="{{ task.title }}" data-deadline='{{ task.deadline|date:"d/m/Y" }}' data-priority="{{ task.get_priority_display }}" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
             {% empty %}

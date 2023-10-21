@@ -20,7 +20,7 @@
     </div>
     <div class="form-group">
         <label for="{{ form.deadline.id_for_label }}">Deadline</label>
-        <input type="date" id="{{ form.deadline.id_for_label }}" name="{{ form.deadline.name }}" class="form-control" value="{{ task.deadline|date:"Y-m-d" }}" />
+        <input type="date" id="{{ form.deadline.id_for_label }}" name="{{ form.deadline.name }}" class="form-control" value='0{{ task.deadline|date:"d/m/Y" }}' />
         {% if form.deadline.errors %}
         <span class="text-danger">{{ form.deadline.errors.0 }}</span>
         {% endif %}
