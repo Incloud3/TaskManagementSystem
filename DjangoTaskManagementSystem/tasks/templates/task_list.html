@@ -22,10 +22,10 @@
                     <td>{{ task.title }}</td>
                     <td>{{ task.description }}</td>
                     <td>{{ task.deadline }}</td>
-                    <td>{{ task.priority }}</td>
+                    <td>{{ task.get_priority_display }}</td>
                     <td>
                         <a href="{% url 'edit_task' task.id %}" class="btn btn-warning">Edit</a>
-                        <a href="#" data-toggle="modal" data-target="#deleteModal" data-id="{{ task.id }}" data-title="{{ task.title }}" data-deadline="{{ task.deadline }}" data-priority="{{ task.priority }}" class="btn btn-danger">Delete</a>
+                        <a href="#" data-toggle="modal" data-target="#deleteModal" data-id="{{ task.id }}" data-title="{{ task.title }}" data-deadline="{{ task.deadline }}" data-priority="{% if task.priority == 1 %}low{% elif task.priority == 2 %}medium{% elif task.priority == 3 %}high{% elif task.priority == 4 %}critical{% endif %}" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
             {% empty %}
@@ -72,9 +72,9 @@
                 var taskPriority = button.data('priority');
 
                 var modal = $(this);
-                modal.find('.modal-body #taskTitle').text(taskTitle);
-                modal.find('.modal-body #taskDeadline').text(taskDeadline);
-                modal.find('.modal-body #taskPriority').text(taskPriority);
+                modal.find('.modal-body #tasktitle').text(taskTitle);
+                modal.find('.modal-body #taskdeadline').text(taskDeadline);
+                modal.find('.modal-body #taskpriority').text(taskPriority);
                 var baseUrl = modal.data('base-url');
                 $('#deleteForm').attr('action', baseUrl.replace('0', taskId));
             });
