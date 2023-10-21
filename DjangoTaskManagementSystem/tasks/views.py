@@ -1,14 +1,14 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django.contrib.auth import login, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .models import TaskPlanned
-from .forms import UpdateEmailForm, DeleteAccountForm
+from .forms import *
 
 @login_required
 def task_list(request):
-    tasks = TaskPlanned.objects.all()
+    tasks = TaskPlanned.objects.filter(user=request.user)
     return render(request, 'task_list.html', {'tasks': tasks})
 
 def error_view(request):
@@ -74,3 +74,37 @@ def profile_view(request):
         'delete_form': delete_form,
     }
     return render(request, 'profile.html', context)
+
+
+def create_task(request):
+    if request.method == 'POST':
+        form = TaskForm(request.POST)
+        if form.is_valid():
+            task = form.save(commit=False)
+            task.user = request.user
+            task.save()
+            return redirect('task_list')
+    else:
+        form = TaskForm()
+
+    return render(request, 'create_task.html', {'form': form})
+
+
+def delete_task(request, task_id):
+    task = get_object_or_404(TaskPlanned, id=task_id)
+    if request.method == "POST":
+        task.delete()
+        return redirect('tasks')  # Assuming 'tasks' is the name of the URL pattern that lists all tasks
+    return render(request, 'delete_task_confirm.html', {'task': task})
+
+def edit_task(request, task_id):
+    task = get_object_or_404(TaskPlanned, id=task_id)
+    if request.method == "POST":
+        # Assuming you have a TaskForm to handle task data
+        form = TaskForm(request.POST, instance=task)
+        if form.is_valid():
+            form.save()
+            return redirect('tasks')  # Again, assuming 'tasks' is the name of the URL pattern that lists all tasks
+    else:
+        form = TaskForm(instance=task)
+    return render(request, 'edit_task.html', {'form': form, 'task': task})

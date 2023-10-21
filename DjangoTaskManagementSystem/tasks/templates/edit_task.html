@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Edit Task</h2>
+<form action="{% url 'edit_task' task.id %}" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="{{ form.Title.id_for_label }}">Title</label>
+        <input type="text" id="{{ form.Title.id_for_label }}" name="{{ form.Title.name }}" class="form-control" value="{{ task.Title }}" />
+        {% if form.Title.errors %}
+        <span class="text-danger">{{ form.Title.errors.0 }}</span>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label for="{{ form.Description.id_for_label }}">Description</label>
+        <textarea id="{{ form.Description.id_for_label }}" name="{{ form.Description.name }}" class="form-control">{{ task.Description }}</textarea>
+        {% if form.Description.errors %}
+        <span class="text-danger">{{ form.Description.errors.0 }}</span>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label for="{{ form.Deadline.id_for_label }}">Deadline</label>
+        <input type="date" id="{{ form.Deadline.id_for_label }}" name="{{ form.Deadline.name }}" class="form-control" value="{{ task.Deadline }}" />
+        {% if form.Deadline.errors %}
+        <span class="text-danger">{{ form.Deadline.errors.0 }}</span>
+        {% endif %}
+    </div>
+    <div class="form-group">
+        <label for="{{ form.Priority.id_for_label }}">Priority</label>
+        <select id="{{ form.Priority.id_for_label }}" name="{{ form.Priority.name }}" class="form-control">
+            {% for priority in form.Priority.field.choices %}
+            <option value="{{ priority.0 }}" {% if priority.0 == task.Priority %}selected{% endif %}>{{ priority.1 }}</option>
+            {% endfor %}
+        </select>
+        {% if form.Priority.errors %}
+        <span class="text-danger">{{ form.Priority.errors.0 }}</span>
+        {% endif %}
+    </div>
+    <button type="submit" class="btn btn-primary">Update task</button>
+</form>
+<div>
+    <a href="{% url 'task_list' %}" class="btn btn-outline-warning">Back to List</a>
+</div>
+{% endblock %}

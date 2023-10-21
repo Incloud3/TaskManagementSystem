@@ -30,4 +30,7 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('accounts/profile/', views.profile_view, name='profile'),
+    path('tasks/create/', views.create_task, name='create_task'),
+    path('tasks/edit/<int:task_id>/', views.edit_task, name='edit_task'),
+    path('tasks/delete/<int:task_id>/', views.delete_task, name='delete_task'),
 ]
