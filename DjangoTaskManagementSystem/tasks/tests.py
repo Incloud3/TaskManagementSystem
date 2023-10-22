@@ -49,7 +49,7 @@ class TaskCreationTest(TestCase):
 
     def setUp(self):
         self.user = User.objects.create_user(username='testUser', password='testPassword123')
-        self.client.login(username='testUser', password='testPassword123')  # Log in the test user
+        self.client.login(username='testUser', password='testPassword123')
 
     def test_task_creation_with_valid_data(self):
         create_task_url = reverse('create_task')
@@ -77,6 +77,68 @@ class TaskCreationTest(TestCase):
 
         task_exists = TaskPlanned.objects.filter(title='Test Task').exists()
         self.assertFalse(task_exists)
+
+class TaskEditTest(TestCase):
+
+    def setUp(self):
+        self.user = User.objects.create_user(username='testUser', password='testPassword123')
+        self.client.login(username='testUser', password='testPassword123')
+        self.task = TaskPlanned.objects.create(
+            title='Original Task',
+            description='Original Description',
+            deadline='2023-10-24',
+            priority='1',
+            user=self.user
+        )
+
+    def test_task_edit_with_valid_data(self):
+        edit_task_url = reverse('edit_task', args=[self.task.id])
+        updated_task_data = {
+            'title': 'Updated Task',
+            'description': 'Updated Description',
+            'deadline': '2023-10-26',
+            'priority': '2'
+        }
+        response = self.client.post(edit_task_url, updated_task_data, follow=True)
+        self.assertEqual(response.status_code, 200)
+
+        task_updated = TaskPlanned.objects.get(id=self.task.id)
+        self.assertEqual(task_updated.title, 'Updated Task')
+        self.assertEqual(task_updated.description, 'Updated Description')
+
+    def test_task_edit_with_invalid_data(self):
+        edit_task_url = reverse('edit_task', args=[self.task.id])
+        invalid_task_data = {
+            'title': '',
+            'deadline': '2023-10-26',
+            'priority': '8'
+        }
+        response = self.client.post(edit_task_url, invalid_task_data, follow=True)
+        self.assertEqual(response.status_code, 200)
+
+        task_not_updated = TaskPlanned.objects.get(id=self.task.id)
+        self.assertNotEqual(task_not_updated.title, '')
+
+class TaskDeleteTest(TestCase):
+
+    def setUp(self):
+        self.user = User.objects.create_user(username='testUser', password='testPassword123')
+        self.client.login(username='testUser', password='testPassword123')
+        self.task = TaskPlanned.objects.create(
+            title='Task to Delete',
+            description='Description of Task to Delete',
+            deadline='2023-10-24',
+            priority='1',
+            user=self.user
+        )
+
+    def test_task_delete(self):
+        delete_task_url = reverse('delete_task', args=[self.task.id])
+        response = self.client.post(delete_task_url, follow=True)
+        self.assertEqual(response.status_code, 200)
+
+        task_deleted = not TaskPlanned.objects.filter(id=self.task.id).exists()
+        self.assertTrue(task_deleted)
 
 class AccessRestrictionTest(TestCase):
 
