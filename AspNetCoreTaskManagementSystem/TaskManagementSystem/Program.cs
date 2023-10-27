@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Prometheus;
 using TaskManagementSystem.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +26,8 @@ using (var scope = app.Services.CreateScope())
     context.Database.Migrate();
 }
 
+app.UseHttpMetrics();
+app.MapMetrics();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
