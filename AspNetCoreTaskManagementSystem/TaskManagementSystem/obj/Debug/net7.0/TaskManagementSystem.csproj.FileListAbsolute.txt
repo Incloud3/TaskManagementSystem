@@ -582,3 +582,5 @@
 /home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/obj/Debug/net7.0/TaskManagementSystem.pdb
 /home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/obj/Debug/net7.0/TaskManagementSystem.genruntimeconfig.cache
 /home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/obj/Debug/net7.0/ref/TaskManagementSystem.dll
+/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/bin/Debug/net7.0/Prometheus.NetStandard.dll
+/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/bin/Debug/net7.0/Prometheus.AspNetCore.dll

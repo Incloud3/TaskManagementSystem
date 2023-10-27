@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path
 from tasks import views
+import django_prometheus
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,4 +34,5 @@ urlpatterns = [
     path('tasks/edit/<int:task_id>/', views.edit_task, name='edit_task'),
     path('tasks/delete/<int:task_id>/', views.delete_task, name='delete_task'),
     path('forbidden/', views.forbidden_view, name='forbidden'),
+    path('metrics/', django_prometheus.views.metrics),
 ]
