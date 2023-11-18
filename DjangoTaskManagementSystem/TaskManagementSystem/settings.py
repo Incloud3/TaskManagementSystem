@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'TaskManagementSystem.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django_prometheus.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'data/db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'TaskManagement',
+        'USER': 'TestUser',
+        'PASSWORD': 'TestUser',
+        'HOST': 'mysql',
+        'PORT': '3306',
     }
 }
 

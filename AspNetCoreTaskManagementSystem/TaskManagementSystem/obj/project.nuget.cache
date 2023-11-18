@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JkuQwsNrQXV/woO1rzm3bEOF0s6IktxjggSukmuIvk02RUYVF8XrQLBwuAPl5BPZhUzNMYN2QTWnys4PH++9vA==",
+  "dgSpecHash": "istBq5+IXS8nHSsw/B2r52C2yvUAIigclrQHSUV4dKQ3AcANy91Q7iGuxC1XdConr/YbwEbmHyQvbmQcepcAGg==",
   "success": true,
   "projectFilePath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -129,6 +129,7 @@
     "/home/incloud/.nuget/packages/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "/home/incloud/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/home/incloud/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
+    "/home/incloud/.nuget/packages/mysqlconnector/2.2.5/mysqlconnector.2.2.5.nupkg.sha512",
     "/home/incloud/.nuget/packages/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg.sha512",
     "/home/incloud/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
     "/home/incloud/.nuget/packages/nuget.common/6.6.1/nuget.common.6.6.1.nupkg.sha512",
@@ -140,6 +141,7 @@
     "/home/incloud/.nuget/packages/nuget.projectmodel/6.6.1/nuget.projectmodel.6.6.1.nupkg.sha512",
     "/home/incloud/.nuget/packages/nuget.protocol/6.6.1/nuget.protocol.6.6.1.nupkg.sha512",
     "/home/incloud/.nuget/packages/nuget.versioning/6.6.1/nuget.versioning.6.6.1.nupkg.sha512",
+    "/home/incloud/.nuget/packages/pomelo.entityframeworkcore.mysql/7.0.0/pomelo.entityframeworkcore.mysql.7.0.0.nupkg.sha512",
     "/home/incloud/.nuget/packages/prometheus-net/8.0.1/prometheus-net.8.0.1.nupkg.sha512",
     "/home/incloud/.nuget/packages/prometheus-net.aspnetcore/8.0.1/prometheus-net.aspnetcore.8.0.1.nupkg.sha512",
     "/home/incloud/.nuget/packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

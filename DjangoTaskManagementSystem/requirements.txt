@@ -4,4 +4,4 @@ sqlparse==0.4.4
 typing_extensions==4.8.0
 gunicorn==20.1.0
 django-prometheus
-
+mysqlclient==2.2.0
