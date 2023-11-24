@@ -8,17 +8,17 @@ public class TaskPlanned
     public int Id { get; set; }
     [Required]
     [StringLength(100, ErrorMessage = "Title cannot be longer than 100 characters")]
-    public string Title { get; set; }
+    public string? Title { get; set; }
     [Required]
-    public string Description { get; set; }
+    public string? Description { get; set; }
     [Required]
     [NotDefaultValue]
     public DateTime Deadline { get; set; }
     [Required]
     public TaskPriority Priority { get; set; }
 
-    public string UserId { get; set; }
-    public virtual IdentityUser User { get; set; }
+    public string? UserId { get; set; }
+    public virtual IdentityUser? User { get; set; }
 }
 
 public enum TaskPriority
@@ -31,7 +31,7 @@ public enum TaskPriority
 
 public class NotDefaultValueAttribute : ValidationAttribute
 {
-    protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+    protected override ValidationResult IsValid(object? value, ValidationContext validationContext)
     {
         if (value is DateTime dateTimeValue && dateTimeValue == DateTime.MinValue)
         {
