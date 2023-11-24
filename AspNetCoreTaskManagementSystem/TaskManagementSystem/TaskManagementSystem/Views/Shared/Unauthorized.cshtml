@@ -1,0 +1,8 @@
+@using Microsoft.AspNetCore.Mvc.Routing
+@{
+    ViewData["Title"] = "Unauthorized access";
+}
+
+<h1>@(Model?.ErrorMessage ?? "You don't have permission to access this resource.")</h1>
+<p>If you think this is a mistake, please contact the administrator.</p>
+<a asp-controller="Home" asp-action="Index" class="btn btn-primary">Return to Home</a>
