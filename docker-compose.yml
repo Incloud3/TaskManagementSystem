@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  django_app:
+    build:
+      context: ./DjangoTaskManagementSystem
+      dockerfile: Dockerfile 
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+
+  aspnet_app:
+    build:
+      context: ./AspNetCoreTaskManagementSystem
+      dockerfile: Dockerfile
+    ports:
+      - "8001:80"
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: TaskManagement
+      MYSQL_USER: TestUser
+      MYSQL_PASSWORD: TestUser
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
