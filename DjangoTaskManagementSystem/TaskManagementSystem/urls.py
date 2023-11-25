@@ -26,7 +26,7 @@ urlpatterns = [
     path('privacy/', views.privacy_view, name='privacy'),
     path('tasks/', views.task_list, name='task_list'),
     path('register/', views.register_view, name='register'),
-    path('login/', auth_views.LoginView.as_view(), name='login'),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('accounts/profile/', views.profile_view, name='profile'),
     path('tasks/create/', views.create_task, name='create_task'),

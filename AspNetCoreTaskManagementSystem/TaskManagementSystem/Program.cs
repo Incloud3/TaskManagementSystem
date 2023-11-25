@@ -20,6 +20,36 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+bool dbConnected = false;
+int retryCount = 0;
+int maxRetries = 10; // Set maximum number of retries
+
+while (!dbConnected && retryCount < maxRetries)
+{
+    try
+    {
+        using (var scope = app.Services.CreateScope())
+        {
+            var services = scope.ServiceProvider;
+            var context = services.GetRequiredService<ApplicationDbContext>();
+            context.Database.OpenConnection(); // Attempt to open a connection
+            context.Database.CloseConnection();
+            dbConnected = true; // Successful connection
+        }
+    }
+    catch (Exception ex)
+    {
+        retryCount++;
+        Console.WriteLine($"Attempt {retryCount}: Unable to connect to MySQL - {ex.Message}");
+        Thread.Sleep(5000); // Wait for 5 seconds before retrying
+    }
+}
+
+if (!dbConnected)
+{
+    throw new InvalidOperationException("Failed to connect to MySQL after multiple attempts.");
+}
+
 // Apply migrations
 using (var scope = app.Services.CreateScope())
 {
