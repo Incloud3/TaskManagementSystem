@@ -84,8 +84,7 @@ DATABASES = {
         'NAME': 'TaskManagement',
         'USER': 'TestUser',
         'PASSWORD': 'TestUser',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'HOST': 'mysql'
     }
 }
 
