@@ -1,0 +1,2745 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.8.0.0",
+        "fileVersion": "4.8.0-3.23524.11 (f43cd10b)",
+        "semanticVersion": "4.8.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'TasksPlanned' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Dev/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/Data/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 12,
+                  "endLine": 9,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Dev/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/Data/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 39,
+                  "endLine": 12,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possible null reference return.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Dev/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/Models/TaskPlanned.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 16,
+                  "endLine": 41,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 232,
+                  "endLine": 91,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 233,
+                  "endLine": 106,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 233,
+                  "endLine": 132,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 236,
+                  "endLine": 172,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 201,
+                  "startColumn": 236,
+                  "endLine": 201,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 222,
+                  "startColumn": 236,
+                  "endLine": 222,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 243,
+                  "startColumn": 236,
+                  "endLine": 243,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 264,
+                  "startColumn": 236,
+                  "endLine": 264,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 236,
+                  "endLine": 287,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 307,
+                  "startColumn": 241,
+                  "endLine": 307,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 321,
+                  "startColumn": 241,
+                  "endLine": 321,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 335,
+                  "startColumn": 241,
+                  "endLine": 335,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account__ViewImports_cshtml.g.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 67,
+                  "endLine": 50,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages__ViewImports_cshtml.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 67,
+                  "endLine": 43,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages__ViewStart_cshtml.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 67,
+                  "endLine": 43,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewStart_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewImports_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Privacy_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 240,
+                  "endLine": 83,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 241,
+                  "endLine": 97,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 241,
+                  "endLine": 127,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 241,
+                  "endLine": 149,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_Error_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_NotFound_cshtml.g.cs",
+                "region": {
+                  "startLine": 78,
+                  "startColumn": 231,
+                  "endLine": 78,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 238,
+                  "endLine": 121,
+                  "endColumn": 240
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 234,
+                  "endLine": 144,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 240,
+                  "endLine": 169,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 239,
+                  "endLine": 192,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 214,
+                  "startColumn": 234,
+                  "endLine": 214,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 239,
+                  "startColumn": 240,
+                  "endLine": 239,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 262,
+                  "startColumn": 239,
+                  "endLine": 262,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 286,
+                  "startColumn": 238,
+                  "endLine": 286,
+                  "endColumn": 240
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 344,
+                  "startColumn": 236,
+                  "endLine": 344,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 361,
+                  "startColumn": 236,
+                  "endLine": 361,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 392,
+                  "startColumn": 236,
+                  "endLine": 392,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 452,
+                  "startColumn": 235,
+                  "endLine": 452,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 549,
+                  "startColumn": 236,
+                  "endLine": 549,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 236,
+                  "endLine": 61,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 236,
+                  "endLine": 75,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_Forbidden_cshtml.g.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 231,
+                  "endLine": 86,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_Unauthorized_cshtml.g.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 231,
+                  "endLine": 86,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__LoginPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 231,
+                  "endLine": 86,
+                  "endColumn": 233
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__LoginPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 114,
+                  "startColumn": 234,
+                  "endLine": 114,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__LoginPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 232,
+                  "endLine": 160,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__LoginPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 179,
+                  "startColumn": 232,
+                  "endLine": 179,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 232,
+                  "endLine": 94,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 232,
+                  "endLine": 109,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 233,
+                  "endLine": 135,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 235,
+                  "endLine": 173,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 218,
+                  "startColumn": 232,
+                  "endLine": 218,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 276,
+                  "startColumn": 232,
+                  "endLine": 276,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 365,
+                  "startColumn": 235,
+                  "endLine": 365,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 238,
+                  "endLine": 113,
+                  "endColumn": 240
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 234,
+                  "endLine": 136,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 240,
+                  "endLine": 161,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 239,
+                  "endLine": 183,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 205,
+                  "startColumn": 234,
+                  "endLine": 205,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 240,
+                  "endLine": 230,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 252,
+                  "startColumn": 239,
+                  "endLine": 252,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 274,
+                  "startColumn": 234,
+                  "endLine": 274,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 299,
+                  "startColumn": 240,
+                  "endLine": 299,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 321,
+                  "startColumn": 239,
+                  "endLine": 321,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 343,
+                  "startColumn": 234,
+                  "endLine": 343,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 368,
+                  "startColumn": 240,
+                  "endLine": 368,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 390,
+                  "startColumn": 239,
+                  "endLine": 390,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 470,
+                  "startColumn": 235,
+                  "endLine": 470,
+                  "endColumn": 237
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages_Account_Register_cshtml.g.cs",
+                "region": {
+                  "startLine": 567,
+                  "startColumn": 236,
+                  "endLine": 567,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 239,
+                  "endLine": 109,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 233,
+                  "endLine": 130,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 152,
+                  "startColumn": 239,
+                  "endLine": 152,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 240,
+                  "endLine": 174,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 243,
+                  "endLine": 195,
+                  "endColumn": 245
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 217,
+                  "startColumn": 239,
+                  "endLine": 217,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 239,
+                  "startColumn": 240,
+                  "endLine": 239,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 260,
+                  "startColumn": 234,
+                  "endLine": 260,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 284,
+                  "startColumn": 239,
+                  "endLine": 284,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 306,
+                  "startColumn": 240,
+                  "endLine": 306,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 329,
+                  "startColumn": 245,
+                  "endLine": 329,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 354,
+                  "startColumn": 245,
+                  "endLine": 354,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 414,
+                  "startColumn": 239,
+                  "endLine": 414,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 452,
+                  "startColumn": 232,
+                  "endLine": 452,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 239,
+                  "endLine": 92,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 233,
+                  "endLine": 113,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 239,
+                  "endLine": 135,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 240,
+                  "endLine": 157,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 243,
+                  "endLine": 178,
+                  "endColumn": 245
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 200,
+                  "startColumn": 239,
+                  "endLine": 200,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 222,
+                  "startColumn": 240,
+                  "endLine": 222,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 243,
+                  "startColumn": 234,
+                  "endLine": 243,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 267,
+                  "startColumn": 239,
+                  "endLine": 267,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 289,
+                  "startColumn": 240,
+                  "endLine": 289,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 321,
+                  "startColumn": 245,
+                  "endLine": 321,
+                  "endColumn": 247
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 390,
+                  "startColumn": 239,
+                  "endLine": 390,
+                  "endColumn": 241
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Task_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 443,
+                  "startColumn": 232,
+                  "endLine": 443,
+                  "endColumn": 234
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Shared_Unauthorized.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_Unauthorized_cshtml.g.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 24,
+                  "endLine": 51,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Shared__Layout.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 24,
+                  "endLine": 56,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Shared__ValidationScriptsPartial.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 24,
+                  "endLine": 43,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Areas_Identity_Pages__ValidationScriptsPartial.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Areas_Identity_Pages__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 24,
+                  "endLine": 61,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Shared_Forbidden.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_Forbidden_cshtml.g.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 24,
+                  "endLine": 51,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "The field 'Views_Shared_NotFound.__tagHelperStringValueBuffer' is never used",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_NotFound_cshtml.g.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 24,
+                  "endLine": 51,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Dev/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/appsettings.json",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 27,
+                  "endLine": 3,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_logger' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Dev/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 46,
+                  "endLine": 9,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'modelBuilder' to 'builder' to match the base class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Dev/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/Data/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 58,
+                  "endLine": 14,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Dev/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/Migrations/20231124224143_ChangesToHtml.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4507",
+          "level": "warning",
+          "message": "Make sure this debug feature is deactivated before delivering the code in production.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Dev/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/Program.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 1,
+                  "endLine": 61,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS0169": {
+          "id": "CS0169",
+          "shortDescription": "Field is never used",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0169)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS1998": {
+          "id": "CS1998",
+          "shortDescription": "Async method lacks 'await' operators and will run synchronously",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1998)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8603": {
+          "id": "CS8603",
+          "shortDescription": "Possible null reference return.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8603)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1186": {
+          "id": "S1186",
+          "shortDescription": "Methods should not be empty",
+          "fullDescription": "An empty method is generally considered bad practice and can lead to confusion, readability, and maintenance issues. Empty methods bring no functionality and are misleading to others as they might think the method implementation fulfills a specific and identified requirement.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1186",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Hard-coded credentials are security-sensitive",
+          "fullDescription": "Because it is easy to extract strings from an application source code or binary, credentials should not be hard-coded. This is particularly true for applications that are distributed or that are open-source.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2068",
+          "properties": {
+            "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4487": {
+          "id": "S4487",
+          "shortDescription": "Unread \"private\" fields should be removed",
+          "fullDescription": "Private fields which are written but never read are a case of \"dead store\". Changing the value of such a field is useless and most probably indicates an error in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4487",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4507": {
+          "id": "S4507",
+          "shortDescription": "Delivering code in production with debug features activated is security-sensitive",
+          "fullDescription": "Development tools and frameworks usually have options to make debugging easier for developers. Although these features are useful during development, they should never be enabled for applications deployed in production. Debug instructions or error messages can leak detailed information about the system, like the application’s path or file names.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4507",
+          "properties": {
+            "category": "Minor Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "Parameter names should match base declaration and other partial definitions",
+          "fullDescription": "Parameters are part of the method signature and its identity.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

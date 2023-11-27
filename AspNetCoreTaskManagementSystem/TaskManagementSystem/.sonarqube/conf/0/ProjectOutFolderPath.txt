@@ -1,0 +1,1 @@
+C:\Dev\TaskManagementSystem\AspNetCoreTaskManagementSystem\TaskManagementSystem\.sonarqube\out\0
