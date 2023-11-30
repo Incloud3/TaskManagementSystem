@@ -28,6 +28,13 @@ cd TaskManagementSystem
 ```bash
 docker-compose up --build
 ```
+4. Run migrations for Django application:
+```bash
+docker exec -it taskmanagementsystem-django_app-1 python manage.py migrate
+```
+
+*Note*: Ensure that the Docker containers are running before executing this command. ASP.NET Core Application doesn't require running migrations as they are integrated withing the Program.cs file during build.
+
 ## Usage
 
 ### Accessing the Applications
