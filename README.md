@@ -51,7 +51,7 @@ docker exec -it taskmanagementsystem-django_app-1 python manage.py migrate
 docker-compose down
 ```
 ## Contributing
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page] if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/Incloud3/TaskManagementSystem/issues) if you want to contribute.
 
 ## License
 [MIT License](LICENSE)
