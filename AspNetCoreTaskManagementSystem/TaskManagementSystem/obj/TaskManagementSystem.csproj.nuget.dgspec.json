@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj": {}
+    "C:\\TaskManagementSystem\\AspNetCoreTaskManagementSystem\\TaskManagementSystem\\TaskManagementSystem.csproj": {}
   },
   "projects": {
-    "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj": {
+    "C:\\TaskManagementSystem\\AspNetCoreTaskManagementSystem\\TaskManagementSystem\\TaskManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
+        "projectUniqueName": "C:\\TaskManagementSystem\\AspNetCoreTaskManagementSystem\\TaskManagementSystem\\TaskManagementSystem.csproj",
         "projectName": "TaskManagementSystem",
-        "projectPath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/TaskManagementSystem.csproj",
-        "packagesPath": "/home/incloud/.nuget/packages/",
-        "outputPath": "/home/incloud/MasterThesis/TaskManagementSystem/AspNetCoreTaskManagementSystem/TaskManagementSystem/obj/",
+        "projectPath": "C:\\TaskManagementSystem\\AspNetCoreTaskManagementSystem\\TaskManagementSystem\\TaskManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\mikol\\.nuget\\packages\\",
+        "outputPath": "C:\\TaskManagementSystem\\AspNetCoreTaskManagementSystem\\TaskManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/incloud/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mikol\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Users\\mikol\\.dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -98,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.114/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\mikol\\.dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
