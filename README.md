@@ -50,4 +50,4 @@ Contributions, issues, and feature requests are welcome. Feel free to check [iss
 [MIT License](LICENSE)
 
 ## Author
-[Damian Maciąg] - [DamMaciag@gmail.com]
+Damian Maciąg - DamMaciag@gmail.com
