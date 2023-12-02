@@ -36,4 +36,9 @@ COPY --from=build-stage /app /app
 
 ENV PATH="/opt/venv/bin:$PATH"
 
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+ENTRYPOINT ["/app/entrypoint.sh"]
+
 CMD ["gunicorn", "TaskManagementSystem.wsgi:application", "--bind", "0.0.0.0:8000"]
