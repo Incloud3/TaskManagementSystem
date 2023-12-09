@@ -36,4 +36,4 @@ COPY --from=build-stage /app /app
 
 ENV PATH="/opt/venv/bin:$PATH"
 
-CMD ["gunicorn", "TaskManagementSystem.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "TaskManagementSystem.wsgi:application", "--bind", "0.0.0.0:8000", "--workers", "9", "--threads", "4"]
