@@ -9,6 +9,11 @@ services:
       - "8000:8000"
     depends_on:
       - mysql
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 8G
 
   aspnet_app:
     build:
@@ -18,6 +23,11 @@ services:
       - "8001:80"
     depends_on:
       - mysql
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 8G
 
   mysql:
     image: mysql:8.0
