@@ -13,7 +13,7 @@ services:
       resources:
         limits:
           cpus: '2.0'
-          memory: 4G
+          memory: 8G
 
   aspnet_app:
     build:
@@ -27,7 +27,7 @@ services:
       resources:
         limits:
           cpus: '2.0'
-          memory: 4G
+          memory: 8G
 
   mysql:
     image: mysql:8.0
