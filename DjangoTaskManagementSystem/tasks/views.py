@@ -3,14 +3,17 @@ from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django.contrib.auth import login, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.views.decorators.cache import cache_page
 from .models import TaskPlanned
 from .forms import *
 
+@cache_page(60 * 10)
 @login_required
 def task_list(request):
     tasks = TaskPlanned.objects.filter(user=request.user)
     return render(request, 'task_list.html', {'tasks': tasks})
 
+@cache_page(60 * 10)
 def error_view(request):
     context = {
         'RequestId': 'SomeID',
@@ -18,12 +21,15 @@ def error_view(request):
     }
     return render(request, 'error_template.html', context)
 
+@cache_page(60 * 10)
 def home_view(request):
     return render(request, 'home.html')
 
+@cache_page(60 * 10)
 def privacy_view(request):
     return render(request, 'privacy.html')
 
+@cache_page(60 * 10)
 def register_view(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
@@ -39,6 +45,7 @@ def register_view(request):
 
     return render(request, 'register.html', context={"register_form": form})
 
+@cache_page(60 * 10)
 @login_required
 def profile_view(request):
     user = request.user
@@ -75,7 +82,7 @@ def profile_view(request):
     }
     return render(request, 'profile.html', context)
 
-
+@cache_page(60 * 10)
 def create_task(request):
     if request.method == 'POST':
         form = TaskForm(request.POST)
@@ -89,7 +96,7 @@ def create_task(request):
 
     return render(request, 'create_task.html', {'form': form})
 
-
+@cache_page(60 * 10)
 def delete_task(request, task_id):
     task = get_object_or_404(TaskPlanned, id=task_id)
 
@@ -102,6 +109,7 @@ def delete_task(request, task_id):
         return redirect('task_list')
     return render(request, 'delete_task_confirm.html', {'task': task})
 
+@cache_page(60 * 10)
 def edit_task(request, task_id):
     task = get_object_or_404(TaskPlanned, id=task_id)
 
@@ -119,6 +127,7 @@ def edit_task(request, task_id):
         form = TaskForm(instance=task)
     return render(request, 'edit_task.html', {'form': form, 'task': task})
 
+@cache_page(60 * 10)
 def forbidden_view(request):
     context = {
         'error_message': "You don't have permission to access this resource."
